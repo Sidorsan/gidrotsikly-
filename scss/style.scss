@@ -1,0 +1,11 @@
+$urt: #fff; 
+.test {
+  font-style: italic;
+  li {
+    font-size: 12;
+    color: $urt;
+  }
+  &-red{
+    color: #fff;
+  }
+}
