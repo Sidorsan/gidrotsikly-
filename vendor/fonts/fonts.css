@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 700;
+  src: local("SF Pro Display"),
+    url("../fonts/SF-Pro-Display-Bold.woff2") format("woff2"),
+    url("../fonts/SF-Pro-Display-Bold.woff") format("woff"),
+    url("../fonts/SF-Pro-Display-Bold.eot") format("eot");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 600;
+  src: local("SF Pro Display"),
+    url("../fonts/SF-Pro-Display-Semibold.woff2") format("woff2"),
+    url("../fonts/SF-Pro-Display-Semibold.woff") format("woff"),
+    url("../fonts/SF-Pro-Display-Semibold.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  src: local("SF Pro Display"),
+    url("../fonts/SF-Pro-Display-Medium.woff2") format("woff2"),
+    url("../fonts/SF-Pro-Display-Medium.woff") format("woff"),
+    url("../fonts/SF-Pro-Display-Medium.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  src: local("SF Pro Display"),
+    url("../fonts/SF-Pro-Display-Regular.woff2") format("woff2"),
+    url("../fonts/SF-Pro-Display-Regular.woff") format("woff"),
+    url("../fonts/SF-Pro-Display-Regular.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Barlow"),
+    url("../fonts/Barlow-Bold.woff2") format("woff2"),
+    url("../fonts/Barlow-Bold.woff") format("woff"),
+    url("../fonts/Barlow-Bold.eot") format("eot");
+  font-display: swap;
+}

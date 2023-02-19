@@ -1,11 +1,150 @@
-$urt: #fff; 
-.test {
-  font-style: italic;
-  li {
-    font-size: 12;
-    color: $urt;
-  }
-  &-red{
+// @import "variables";
+// @import "mixins";
+
+// .test {
+//   @include font(#333, 400);
+//   @include padd(20px 30px) //падингов можно хоть сколько
+// ;
+// }
+// .test1 {
+//   @include font();
+//   @include padd(20px) //падингов можно хоть сколько
+// ;
+// }
+
+/*--------------------------------------------*/
+
+// a {
+//   @include link(black, red, blue, green);
+// }
+// .header1 {
+//   @include link(black, red, blue, green) {
+//     background-color: #fff;
+//     &:visited {
+//       color: #260954;
+//     }
+//   }
+// }
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+/*--------------------------------------------*/
+html,
+.body {
+  font-family: "SF Pro Display", sans-serif;
+  color: #2f3035;
+  line-height: 120%;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.logo {}
+
+/*---------------HEADER-----------------------------*/
+/*---------------HEADER-----------------------------*/
+
+.header {
+  margin-top: 25px;
+}
+
+.header__top {}
+
+.header__top-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__nav {
+
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.header__nav-link {
+  font-weight: 700;
+  font-size: 20px;
+  margin-right: 50px;
+  white-space: nowrap;
+}
+
+.header__nav-link:last-child {
+  margin-right: 0;
+}
+
+.haeder__logo {
+  margin-right: 50px;
+
+}
+
+.header__nav-link--location {
+  position: relative;
+
+}
+
+.header__nav-user {}
+
+.header__nav-link--location::before {
+  position: absolute;
+  content: '';
+  top: -13px;
+  left: -27px;
+  width: 30px;
+  height: 30px;
+  background: url('../images/lokationHeader.svg') no-repeat;
+  ;
+}
+
+.header__nav-link-user {
+  position: relative;
+  margin-right: 10px;
+
+  span {
+    position: absolute;
+    font-weight: 500;
+    font-size: 10px;
     color: #fff;
+    text-align: center;
+    top: 11px;
+    right: -14px;
+    width: 20px;
+    height: 20px;
+    background-color: #1C62CD;
+    border-radius: 50%;
+    padding-top: .5em;
   }
+}
+
+.header__nav-link-user:last-child {
+  margin-right: 14px;
+}
+
+.header__bottom {
+  margin-top: 20px;
+
+  .header__nav {
+    width: 100%;
+  }
+
+  .header__nav-link {
+    font-weight: 400;
+    margin-right: 10px;
+  }
+
+  .header__nav-link:last-child {
+    margin-right: 0;
+  }
+}
+
+.header__bottom-inner {
+  min-height: 53px;
+  display: flex;
+  align-items: center;
+  background: #F0F0F4;
 }

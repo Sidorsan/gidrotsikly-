@@ -1,0 +1,22 @@
+@mixin font($col: $colorBase, $fWei: 700) {
+  color: $col;
+  font-weight: $fWei;
+}
+@mixin padd($padd...) {
+  padding: $padd;
+}
+
+
+@mixin link($link, $hover, $activ, $visited) {
+  color: $link;
+  &:hover {
+    color: lighten($color: $link, $amount: 20%);
+  }
+  &:active {
+    color: $activ;
+  }
+  &:visited {
+    color: $visited;
+  }
+  @content
+}
