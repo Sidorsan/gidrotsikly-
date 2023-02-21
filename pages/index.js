@@ -5,6 +5,7 @@ $(function () {
     appendDots: $('.sliderBanner__dots'),
     dots: true,
     adaptiveHeight: true,
+    slidesToShow: 1,
    
   })
   $('.sliderBanner__next').on('click', function (e) {
