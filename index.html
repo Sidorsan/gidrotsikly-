@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gidrotsikly</title>
   <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 
 <body class='page'>
@@ -25,13 +26,13 @@
             </a>
             <a class='header__nav-link header__nav-link--location' href="#">Москва, ул. Науки 25</a>
             <nav class='header__nav header__nav-user'>
-              <a class='header__nav-link header__nav-link-user' href="#">
+              <a class='header__nav-link-user' href="#">
                 <img src="./images/heart.svg" alt="сердце">
               </a>
-              <a class='header__nav-link header__nav-link-user' href="#">
+              <a class='header__nav-link-user' href="#">
                 <img src="./images/person.svg" alt="иконка силуэта человека">
               </a>
-              <a class='header__nav-link header__nav-link-user' href="#">
+              <a class='header__nav-link-user' href="#">
                 <img src="./images/bascet.svg" alt="">
                 <span>1</span>
               </a>
@@ -56,7 +57,60 @@
         </div>
       </div>
     </header>
+    <main class='main'>
+      <section class="main__sliderBanner sliderBanner">
+        <div class="container">
+          <div class='sliderBanner__inner'>
+            <div class='sliderBanner__wrapper'>
+              <div class="sliderBanner__slider">
+                <div class="sliderBanner__slide">
+                  <img src="./images/sliderBanner.jpg" alt="Человек на гидроскутере">
+                </div>
+                <div class="sliderBanner__slide">
+                  <img src="./images/sliderBanner.jpg" alt="Человек на гидроскутере">
+                </div>
+              </div>
+              <a class="sliderBanner__arrow sliderBanner__prev" href="#">
+                <svg width="16" height="29" viewBox="0 0 16 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.9673 14.1924L14.9422 1.37269C15.2613 1.05741 15.2613 0.551755 14.9422 0.236466C14.6231 -0.0788221 14.1113 -0.0788221 13.7922 0.236466L0.239328 13.6273C-0.0797759 13.9426 -0.0797759 14.4482 0.239328 14.7635L13.7922 28.1484C13.9487 28.3031 14.1595 28.3864 14.3642 28.3864C14.5689 28.3864 14.7796 28.309 14.9362 28.1484C15.2553 27.8331 15.2553 27.3275 14.9362 27.0122L1.9673 14.1924Z"
+                    fill="white" />
+                </svg>
+              </a>
+              <a class="sliderBanner__arrow sliderBanner__next" href="#"><svg width="17" height="29" viewBox="0 0 17 29"
+                  fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.8936 13.632L2.33608 0.236548C2.01686 -0.0788495 1.50491 -0.0788495 1.1857 0.236548C0.866485 0.551946 0.866485 1.05777 1.1857 1.37317L14.1651 14.1974L1.1857 27.0216C0.866485 27.337 0.866485 27.8428 1.1857 28.1582C1.3423 28.3129 1.5531 28.3962 1.75788 28.3962C1.96266 28.3962 2.17346 28.3189 2.33005 28.1582L15.8876 14.7627C16.2068 14.4533 16.2068 13.9415 15.8936 13.632Z"
+                    fill="white" />
+                </svg>
+              </a>
+              <div class="sliderBanner__dots"></div>
+            </div>
+            <div class="cardPromtion">
+              <div class='cardPromtion__top'>
+                <div class="cardPromtion__banner">
+                  <p>акция</p>
+                </div>
+                <div class="cardPromtion__newPrice">190 000</div>
+              </div >
+              <div class="cardPromtion__newOldPrice">225 000</div>
+              <img src="./images/motorHeaderActionCard.jpg" alt="лодочный мотор">
+              <p class='cardPromtion__discription'>Лодочный мотор
+                Suzuki DF9.9BRS</p>
+              <div class='cardPromtion__period'>
+                <p class='cardPromtion__validUntil'>Акция действует до</p>
+                <div class='cardPromtion__date'>31.08.2020</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src='./pages/index.js'></script>
+
 </body>
 
 </html>
