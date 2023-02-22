@@ -422,7 +422,7 @@ body {
   // .cardPromtion__period
 
   &__period {
-    
+
     margin-top: 7px;
     display: flex;
     flex-direction: column;
@@ -446,5 +446,121 @@ body {
     font-weight: 700;
     font-size: 18px;
     color: #1C62CD;
+  }
+}
+
+/*---------------search-----------------------------*/
+/*---------------search-----------------------------*/
+
+.search {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+  }
+
+  &__form-top {
+    white-space: nowrap;
+  }
+}
+
+
+.checkbox-btn {
+  display: inline-block;
+  position: relative;
+  margin-right: 5px;
+}
+
+.checkbox-btn:last-child {
+  margin-right: 0px;
+}
+
+.checkbox-btn:after {
+  content: '';
+  left: 0;
+  bottom: -3px;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  background-color: transparent;
+  transition: $trAll;
+}
+
+.checkbox-btn:hover::after {
+  background-color: #1C62CD;
+}
+
+.checkbox-btn input[type=radio] {
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+.checkbox-btn span {
+  display: inline-block;
+  padding: 11px 26px;
+  font-weight: 400;
+  font-size: 20px;
+
+}
+
+.checkbox-btn input[type=radio]:checked+span {
+  background: #F0F0F4;
+  font-weight: 700;
+  ;
+}
+
+.checkbox-btn:hover {
+  cursor: pointer;
+}
+
+.checkbox-btn input[type=radio]:active:not(:disabled)+span {
+  background: #d2c5ac;
+  color: #000;
+}
+
+.checkbox-btn input[type=radio]:disabled+span {
+  background: #efefef;
+  color: #666;
+  cursor: default;
+}
+
+.checkbox-btn input[type=radio]:checked:disabled+span {
+  background: #f7efdc;
+
+}
+
+.search {
+  &__form-buttom {
+    margin-top: 25px;
+    height: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__input {
+    width: 100%;
+    min-height: 100%;
+    background-color: #F0F0F4;
+    font-weight: 400;
+    font-size: 16px;
+    color: #656464;
+    padding-left: 20px;
+  }
+
+  // .search__button
+
+  &__button-submit {
+    min-height: 100%;
+    min-width: 145px;
+    background-color: #1C62CD;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
   }
 }
