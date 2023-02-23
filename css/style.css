@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  max-width: 1230px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
   height: 100%;
@@ -253,6 +253,7 @@ body {
   color: #1C62CD;
   padding-right: 27px;
   position: relative;
+  white-space: nowrap;
 }
 .cardPromtion__newPrice::after {
   position: absolute;
@@ -272,6 +273,7 @@ body {
   align-self: flex-end;
   padding: 0px 20px 0px 10px;
   position: relative;
+  white-space: nowrap;
 }
 .cardPromtion__oldPrice::after {
   position: absolute;
@@ -296,8 +298,9 @@ body {
   padding: 0px 80px 0px 60px;
 }
 .cardPromtion__imgBox img {
-  width: 125px;
-  height: 176px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .cardPromtion__discription {
   display: inline-block;
@@ -427,6 +430,69 @@ body {
   font-size: 14px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+
+/*---------------cardNav-----------------------------*/
+/*---------------cardNav-----------------------------*/
+.cardNav {
+  margin-top: 90px;
+}
+.cardNav__list {
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+  gap: 30px;
+}
+.cardNav__list-item {
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+}
+.cardNav__list-link {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+.cardNav__list-link:hover {
+  box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+}
+.cardNav__list-link:hover .cardNav__list-link-discroption {
+  color: #1C62CD;
+}
+.cardNav__list-link-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 10px 14px 20px;
+}
+.cardNav__list-link-discroption {
+  font-family: 'Barlow';
+  font-weight: 700;
+  font-size: 23px;
+}
+.cardNav__list-link-further {
+  width: fit-content;
+  font-weight: 400;
+  font-size: 14px;
+  color: #C4C4C4;
+  position: relative;
+}
+.cardNav__list-link-further::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: -12px;
+  width: 6px;
+  height: 9px;
+  transform: translateY(-50%);
+  background: url("../images/arrow-right-little.svg");
+}
+.cardNav__list-link-imgBox {
+  padding: 8px 0px;
+  margin: auto;
+}
+.cardNav__list-link-imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /*# sourceMappingURL=style.css.map */
