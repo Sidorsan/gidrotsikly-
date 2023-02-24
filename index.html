@@ -16,44 +16,76 @@
       <div class='header__top'>
         <div class="container">
           <div class="header__top-inner">
-            <nav class="header__nav">
-              <a class='header__nav-link' href="#">Магазины</a>
-              <a class='header__nav-link' href="#">Акции</a>
-              <a class='header__nav-link' href="#">Доставка и оплата</a>
+            <nav>
+              <ul class="header__nav">
+                <li class='header__nav-link'>
+                  <a href="#">Магазины</a>
+                </li>
+                <li class='header__nav-link'>
+                  <a href="#">Акции</a>
+                </li>
+                <li class='header__nav-link'>
+                  <a href="#">Доставка и оплата</a>
+                </li>
+              </ul>
             </nav>
             <a class='haeder__logo logo' href="./index.html">
               <img src="./images/logo.svg" alt="logo">
             </a>
             <a class='header__nav-link header__nav-link--location' href="#">Москва, ул. Науки 25</a>
-            <nav class='header__nav header__nav-user'>
-              <a class='header__nav-link-user' href="#">
-                <img src="./images/heart.svg" alt="сердце">
-              </a>
-              <a class='header__nav-link-user' href="#">
-                <img src="./images/person.svg" alt="иконка силуэта человека">
-              </a>
-              <a class='header__nav-link-user' href="#">
-                <img src="./images/bascet.svg" alt="">
-                <span>1</span>
-              </a>
+            <nav>
+              <ul class='header__nav header__nav-user'>
+                <li class='header__nav-link-user'>
+                  <a href="#">
+                    <img src="./images/heart.svg" alt="сердце">
+                  </a>
+                </li>
+                <li class='header__nav-link-user'>
+                  <a href="#">
+                    <img src="./images/person.svg" alt="иконка силуэта человека">
+                  </a>
+                </li>
+                <li class='header__nav-link-user'>
+                  <a href="#">
+                    <img src="./images/bascet.svg" alt="">
+                    <span>1</span>
+                  </a>
+                </li>
+              </ul>
             </nav>
           </div>
         </div>
       </div>
       <div class="header__bottom">
         <div class="container">
-          <div class="header__bottom-inner">
-            <nav class='header__nav'>
-              <a class='header__nav-link' href="#">Квадроциклы</a>
-              <a class='header__nav-link' href="#">Катера</a>
-              <a class='header__nav-link' href="#">Гидроциклы</a>
-              <a class='header__nav-link' href="#">Лодки</a>
-              <a class='header__nav-link' href="#">Вездеходы</a>
-              <a class='header__nav-link' href="#">Снегоходы</a>
-              <a class='header__nav-link' href="#">Двигатели</a>
-              <a class='header__nav-link' href="#">Запчасти</a>
-            </nav>
-          </div>
+          <nav>
+            <ul class='header__nav'>
+              <li class='header__nav-link'>
+                <a href="#">Квадроциклы</a>
+              </li>
+              <li class='header__nav-link'>
+                <a href="#">Катера</a>
+              </li>
+              <li class='header__nav-link'>
+                <a href="#">Гидроциклы</a>
+              </li>
+              <li class='header__nav-link'>
+                <a href="#">Лодки</a>
+              </li>
+              <li class='header__nav-link'>
+                <a href="#">Вездеходы</a>
+              </li>
+              <li class='header__nav-link'>
+                <a href="#">Снегоходы</a>
+              </li>
+              <li class='header__nav-link'>
+                <a href="#">Двигатели</a>
+              </li>
+              <li class='header__nav-link'>
+                <a href="#">Запчасти</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -88,7 +120,7 @@
             </div>
             <div class="cardPromtion">
               <div class='cardPromtion__top'>
-                <div class="cardPromtion__banner">
+                <div class="cardPromtion__actionBanner">
                   <p>акция</p>
                 </div>
                 <div class="cardPromtion__newPrice">190 000</div>
@@ -109,26 +141,32 @@
       <section class="search">
         <div class='container'>
           <form class='search__form'>
-            <div class='search__form-top'>
-              <label class="checkbox-btn">
-                <input type="radio" name='checkbox' value="номер">
-                <span>Поиск по номеру</span>
-              </label>
-              <label class="checkbox-btn">
-                <input type="radio" name='checkbox' value="марку" checked>
-                <span>Поиск по марке</span>
-              </label>
-              <label class="checkbox-btn">
-                <input type="radio" name='checkbox' value="название товара">
-                <span>Поиск по названию товара</span>
-              </label>
-            </div>
+            <ul class='search__form-top'>
+              <li>
+                <label class="checkbox-btn">
+                  <input type="radio" name='checkbox' value="номер">
+                  <span>Поиск по номеру</span>
+                </label>
+              </li>
+              <li class="checkbox-btn">
+                <label>
+                  <input type="radio" name='checkbox' value="марку" checked>
+                  <span>Поиск по марке</span>
+                </label>
+              </li>
+              <li class="checkbox-btn">
+                <label class="checkbox-btn">
+                  <input type="radio" name='checkbox' value="название товара">
+                  <span>Поиск по названию товара</span>
+                </label>
+              </li>
+            </ul>
             <div class='search__form-buttom'>
               <input class='search__input' type="text" placeholder="введите марку">
               <button class='search__button-submit' type='submit'>искать</button>
             </div>
           </form>
-        </div >
+        </div>
       </section>
       <section class="cardNav">
         <div class="container">
@@ -138,7 +176,7 @@
                 <div class='cardNav__list-link-content'>
                   <p class='cardNav__list-link-discroption'>Квадроциклы</p>
                   <p class="cardNav__list-link-further">Подробнее</p>
-                </div >
+                </div>
                 <div class="cardNav__list-link-imgBox">
                   <img src="./images/technikaCard/1.jpg" alt="">
                 </div>
@@ -149,7 +187,7 @@
                 <div class='cardNav__list-link-content'>
                   <p class='cardNav__list-link-discroption'>Гидроциклы</p>
                   <p class="cardNav__list-link-further">Подробнее</p>
-                </div >
+                </div>
                 <div class="cardNav__list-link-imgBox">
                   <img src="./images/technikaCard/2.jpg" alt="">
                 </div>
@@ -160,7 +198,7 @@
                 <div class='cardNav__list-link-content'>
                   <p class='cardNav__list-link-discroption'>Катера</p>
                   <p class="cardNav__list-link-further">Подробнее</p>
-                </div >
+                </div>
                 <div class="cardNav__list-link-imgBox">
                   <img src="./images/technikaCard/3.jpg" alt="">
                 </div>
@@ -171,7 +209,7 @@
                 <div class='cardNav__list-link-content'>
                   <p class='cardNav__list-link-discroption'>Снегоходы</p>
                   <p class="cardNav__list-link-further">Подробнее</p>
-                </div >
+                </div>
                 <div class="cardNav__list-link-imgBox">
                   <img src="./images/technikaCard/4.jpg" alt="">
                 </div>
@@ -182,7 +220,7 @@
                 <div class='cardNav__list-link-content'>
                   <p class='cardNav__list-link-discroption'>Вездеходы</p>
                   <p class="cardNav__list-link-further">Подробнее</p>
-                </div >
+                </div>
                 <div class="cardNav__list-link-imgBox">
                   <img src="./images/technikaCard/5.jpg" alt="">
                 </div>
@@ -193,7 +231,7 @@
                 <div class='cardNav__list-link-content'>
                   <p class='cardNav__list-link-discroption'>Двигатели</p>
                   <p class="cardNav__list-link-further">Подробнее</p>
-                </div >
+                </div>
                 <div class="cardNav__list-link-imgBox">
                   <img src="./images/technikaCard/6.jpg" alt="">
                 </div>
@@ -203,11 +241,130 @@
           </ul>
         </div>
       </section>
+      <section class="popular">
+        <div class="container">
+          <h1 class='popular__title'>Популярные товары</h1>
+          <ul class="popular__filter-box">
+            <li class='popular__filter-item'>
+              <button class='popular__filter-btn popular__filter-btn--active' data-filter=".popular__card--spareParts">запчасти</button>
+            </li>
+            <li class='popular__filter-item'>
+              <button class='popular__filter-btn' type='button' data-filter=".popular__card--motors">моторы</button>
+            </li>
+            <li class='popular__filter-item'>
+              <button class='popular__filter-btn' type='button' data-filter=".popular__card--tyre">шины</button>
+            </li>
+            <li class='popular__filter-item'>
+              <button class='popular__filter-btn' type='button' data-filter=".popular__card--electronics">электроника</button>
+            </li>
+            <li class='popular__filter-item'>
+              <button class='popular__filter-btn' type='button' data-filter=".popular__card--tools">инструменты</button>
+            </li>
+            <li class='popular__filter-item'>
+              <button class='popular__filter-btn' type='button' data-filter=".popular__card--accessory">аксессуары</button>
+            </li>
+          </ul>
+          <ul class='popular__cardList'>
+            <li class='mix popular__card popular__card--accessory' data-order="1">
+              <a class='popular__card-link' href="#">
+                <p class='popular__card-saleBanner'>sale</p>
+                <a class="popular__card-like" href="#">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                      fill="#2F3035" />
+                  </svg>
+                </a>
+                <div class="popular__card-imgBox">
+                  <img src="./images/popularProducts/1.jpg" alt="картинка товара">
+                </div>
+                <p class='popular__card-discription'>Водонепроницаемый
+                  Рюкзак</p>
+                <div class='popular__card-cost-wrapper'>
+                  <p class='popular__card-cost'>9 800 ₽</p>
+                  <a href="#" class="popular__card-basket">
+                    <img src="./images/bascet.svg" alt="корзина">
+                  </a>
+                </div>
+              </a>
+            </li>
+            <li class='mix popular__card popular__card--accessory' data-order="2">
+              <a class='popular__card-link' href="#">
+                <p class='popular__card-saleBanner'>sale</p>
+                <a class="popular__card-like" href="#">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                      fill="#2F3035" />
+                  </svg>
+                </a>
+                <div class="popular__card-imgBox">
+                  <img src="./images/popularProducts/2.jpg" alt="картинка товара">
+                </div>
+                <p class='popular__card-discription'>Спасательный жилет BRP Men's Airflow PFD
+                </p>
+                <div class='popular__card-cost-wrapper'>
+                  <p class='popular__card-cost'>6 900 ₽</p>
+                  <a href="#" class="popular__card-basket">
+                    <img src="./images/bascet.svg" alt="корзина">
+                  </a>
+                </div>
+              </a>
+            </li>
+            <li class='mix popular__card popular__card--spareParts' data-order="3">
+              <a class='popular__card-link' href="#">
+                <p class='popular__card-saleBanner'>sale</p>
+                <a class="popular__card-like" href="#">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                      fill="#2F3035" />
+                  </svg>
+                </a>
+                <div class="popular__card-imgBox">
+                  <img src="./images/popularProducts/3.jpg" alt="картинка товара">
+                </div>
+                <p class='popular__card-discription'>BRP Audio-Premium System</p>
+                <div class='popular__card-cost-wrapper'>
+                  <p class='popular__card-cost'>68 000 ₽</p>
+                  <a href="#" class="popular__card-basket">
+                    <img src="./images/bascet.svg" alt="корзина">
+                  </a>
+                </div>
+              </a>
+            </li>
+            <li class='mix popular__card popular__card--motors' data-order="4">
+              <a class='popular__card-link' href="#">
+                <p class='popular__card-saleBanner'>sale</p>
+                <a class="popular__card-like" href="#">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                      fill="#2F3035" />
+                  </svg>
+                </a>
+                <div class="popular__card-imgBox">
+                  <img src="./images/popularProducts/4.jpg" alt="картинка товара">
+                </div>
+                <p class='popular__card-discription'>Водонепроницаемый
+                  Рюкзак</p>
+                <div class='popular__card-cost-wrapper'>
+                  <p class='popular__card-cost'>9 800 ₽</p>
+                  <a href="#" class="popular__card-basket">
+                    <img src="./images/bascet.svg" alt="корзина">
+                  </a>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src='./pages/index.js'></script>
+  <script src="./pages/mixitup.js"></script>
 
 </body>
 

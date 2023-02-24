@@ -37,4 +37,12 @@ $(function () {
 });
 $(".search__form-top").on("click", function () {
      $(".search__input").attr("placeholder", (("введите " + $( "input:checked" ).val()))).blur();
-  });
+});
+  
+$(function () {
+  var mixer = mixitup('.popular__cardList');
+  $('.popular__filter-btn').on('click', function () {
+    $('.popular__filter-btn').removeClass('popular__filter-btn--active')
+    $(this).addClass('popular__filter-btn--active')
+  })
+})

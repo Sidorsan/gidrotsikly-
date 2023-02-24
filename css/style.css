@@ -137,6 +137,9 @@ body {
   font-weight: 400;
   margin-right: 10px;
 }
+.header__bottom .header__nav-link:hover {
+  text-shadow: 0 0 .65px #333, 0 0 .65px #333;
+}
 .header__bottom .header__nav-link:last-child {
   margin-right: 0;
 }
@@ -233,7 +236,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.cardPromtion__banner {
+.cardPromtion__actionBanner {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,7 +244,7 @@ body {
   height: 30px;
   background-color: #1C62CD;
 }
-.cardPromtion__banner p {
+.cardPromtion__actionBanner p {
   font-size: 12px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -339,6 +342,7 @@ body {
 }
 .search__form-top {
   white-space: nowrap;
+  display: flex;
 }
 
 .checkbox-btn {
@@ -383,7 +387,7 @@ body {
 
 .checkbox-btn input[type=radio]:checked + span {
   background: #F0F0F4;
-  font-weight: 700;
+  text-shadow: 0 0 .65px #333, 0 0 .65px #333;
 }
 
 .checkbox-btn:hover {
@@ -493,6 +497,52 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+/*---------------popular-----------------------------*/
+/*---------------popular-----------------------------*/
+.popular {
+  margin-top: 80px;
+}
+
+.popular__title {
+  font-family: 'Barlow';
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.popular__filter-box {
+  display: flex;
+  margin-top: 25px;
+}
+
+.popular__filter-item {
+  margin-right: 50px;
+}
+
+.popular__filter-item:last-child {
+  margin-right: 0;
+}
+
+.popular__filter-btn {
+  background: none;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.popular__filter-btn--active {
+  text-shadow: 0 0 .65px #333, 0 0 .65px #333;
+}
+
+.popular__cardList {
+  display: flex;
+  margin: 35px -15px 0px;
+}
+
+.popular__card {
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+  margin: 0 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -181,9 +181,14 @@ body {
     width: 100%;
   }
 
+
   .header__nav-link {
     font-weight: 400;
     margin-right: 10px;
+  }
+  .header__nav-link:hover {
+    text-shadow: 0 0 .65px #333, 0 0 .65px #333;
+  
   }
 
   .header__nav-link:last-child {
@@ -327,7 +332,7 @@ body {
     justify-content: space-between;
   }
 
-  &__banner {
+  &__actionBanner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -466,6 +471,7 @@ body {
 
   &__form-top {
     white-space: nowrap;
+    display: flex;
   }
 }
 
@@ -513,7 +519,7 @@ body {
 
 .checkbox-btn input[type=radio]:checked+span {
   background: #F0F0F4;
-  font-weight: 700;
+  text-shadow: 0 0 .65px #333, 0 0 .65px #333;
   ;
 }
 
@@ -602,6 +608,7 @@ body {
 
   &__list-link:hover {
     box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+
     .cardNav__list-link-discroption {
       color: #1C62CD;
     }
@@ -661,4 +668,67 @@ body {
   }
 }
 
-.container {}
+
+/*---------------popular-----------------------------*/
+/*---------------popular-----------------------------*/
+.popular {
+  margin-top: 80px;
+}
+
+.popular__title {
+  font-family: 'Barlow';
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.popular__filter-box {
+  display: flex;
+  margin-top: 25px;
+}
+
+.popular__filter-item {
+  margin-right: 50px;
+}
+
+.popular__filter-item:last-child {
+  margin-right: 0;
+}
+
+.popular__filter-btn {
+  background: none;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.popular__filter-btn--active {
+  text-shadow: 0 0 .65px #333, 0 0 .65px #333;
+}
+
+.popular__cardList {
+  display: flex;
+  margin: 35px -15px 0px;
+}
+
+.popular__card {
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+ margin: 0 15px;
+}
+
+.popular__card-link {
+
+}
+
+.popular__card-saleBanner {}
+
+.popular__card-like {}
+
+.popular__card-imgBox {}
+
+.popular__card-discription {}
+
+.popular__card-cost-wrapper {}
+
+.popular__card-cost {}
+
+.popular__card-basket {}
