@@ -35,9 +35,11 @@ body {
   line-height: 1.2;
 }
 
+.wrapper {}
+
 .container {
   max-width: 1200px;
-  padding: 0 15px;
+  padding: 0 45px;
   margin: 0 auto;
   height: 100%;
 }
@@ -186,9 +188,10 @@ body {
     font-weight: 400;
     margin-right: 10px;
   }
+
   .header__nav-link:hover {
     text-shadow: 0 0 .65px #333, 0 0 .65px #333;
-  
+
   }
 
   .header__nav-link:last-child {
@@ -339,6 +342,7 @@ body {
     width: 90px;
     height: 30px;
     background-color: #1C62CD;
+    margin-right: 10px;
 
     p {
       font-size: 12px;
@@ -698,10 +702,33 @@ body {
   background: none;
   font-weight: 500;
   font-size: 15px;
+  position: relative;
+  line-height: 1.8;
 }
 
+.popular__filter-btn:hover {
+  text-shadow: 0 0 .8px #333, 0 0 .8px #333;
+}
+
+.popular__filter-btn::after {
+  content: '';
+  left: 0;
+  bottom: -10px;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  background-color: transparent;
+  transition: $trAll;
+}
+
+
+
 .popular__filter-btn--active {
-  text-shadow: 0 0 .65px #333, 0 0 .65px #333;
+  border-bottom: 3px solid #1C62CD;
+}
+
+.popular__cardList-wrapper {
+  position: relative;
 }
 
 .popular__cardList {
@@ -712,23 +739,108 @@ body {
 .popular__card {
   border: 1px solid #CDCDCD;
   border-radius: 3px;
- margin: 0 15px;
-}
-
-.popular__card-link {
+  margin: 0 15px;
+  position: relative;
 
 }
 
-.popular__card-saleBanner {}
+.popular__card-link {}
 
-.popular__card-like {}
+.popular__card-saleBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 30px;
+  background-color: #1C62CD;
+  visibility: hidden;
 
-.popular__card-imgBox {}
+  &--activ {
+    visibility: visible;
+  }
 
-.popular__card-discription {}
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+}
+
+
+.popular__card-like {
+  position: absolute;
+  top: 16px;
+  right: 19px;
+}
+
+.popular__card-like {
+  position: absolute;
+  top: 16px;
+  right: 19px;
+  background: transparent;
+}
+
+.popular__card-like--active  {
+  background: url('../images/heartBlue.svg') no-repeat;
+  svg path {
+    fill: #1C62CD;
+  }
+}
+
+.popular__card-imgBox {
+  margin: 52px auto 0px;
+  max-width: 200px;
+  min-height: 200px;
+}
+
+.popular__card-imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+}
+
+.popular__card-discription {
+  display: block;
+  max-width: 230px;
+  margin: 14px auto 0px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  width: 230px;
+  height: 45px;
+}
 
 .popular__card-cost-wrapper {}
 
-.popular__card-cost {}
+.popular__card-cost {
+  display: block;
+  font-weight: 700;
+  font-size: 30px;
+  margin: 25px auto 31px;
+  width: fit-content;
+}
 
 .popular__card-basket {}
+
+.popular__cardList-arrow {}
+
+.popular__cardList-prev {
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  transform: translateY(-50%);
+  margin-left: 10px;
+}
+
+.popular__cardList-next {
+  position: absolute;
+  top: 50%;
+  right: -45px;
+  transform: translateY(-50%);
+}
+
+.popular__addButton {}

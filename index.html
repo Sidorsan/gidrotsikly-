@@ -246,119 +246,210 @@
           <h1 class='popular__title'>Популярные товары</h1>
           <ul class="popular__filter-box">
             <li class='popular__filter-item'>
-              <button class='popular__filter-btn popular__filter-btn--active' data-filter=".popular__card--spareParts">запчасти</button>
+              <button class='popular__filter-btn popular__filter-btn--active'
+                data-filter=".popular__card--spareParts">запчасти</button>
             </li>
             <li class='popular__filter-item'>
               <button class='popular__filter-btn' type='button' data-filter=".popular__card--motors">моторы</button>
             </li>
             <li class='popular__filter-item'>
-              <button class='popular__filter-btn' type='button' data-filter=".popular__card--tyre">шины</button>
+              <button class='popular__filter-btn' type='button' data-filter=".popular__card--tyres">шины</button>
             </li>
             <li class='popular__filter-item'>
-              <button class='popular__filter-btn' type='button' data-filter=".popular__card--electronics">электроника</button>
+              <button class='popular__filter-btn' type='button'
+                data-filter=".popular__card--electronics">электроника</button>
             </li>
             <li class='popular__filter-item'>
               <button class='popular__filter-btn' type='button' data-filter=".popular__card--tools">инструменты</button>
             </li>
             <li class='popular__filter-item'>
-              <button class='popular__filter-btn' type='button' data-filter=".popular__card--accessory">аксессуары</button>
+              <button class='popular__filter-btn' type='button'
+                data-filter=".popular__card--accessory">аксессуары</button>
             </li>
           </ul>
-          <ul class='popular__cardList'>
-            <li class='mix popular__card popular__card--accessory' data-order="1">
-              <a class='popular__card-link' href="#">
-                <p class='popular__card-saleBanner'>sale</p>
-                <a class="popular__card-like" href="#">
-                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
-                      fill="#2F3035" />
-                  </svg>
+          <div class='popular__cardList-wrapper'>
+            <ul class='popular__cardList'>
+              <li class='mix popular__card popular__card--spareParts' data-order="1">
+                <a class='popular__card-link' href="#">
+                  <div class='popular__card-saleBanner'><p>sale</p></div>
+                  <button class="popular__card-like">
+                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                        fill="#2F3035" />
+                    </svg>
+                  </button>
+                  <div class="popular__card-imgBox">
+                    <img src="./images/popularProducts/1.jpg" alt="картинка товара">
+                  </div>
+                  <p class='popular__card-discription'>Водонепроницаемый
+                    Рюкзак</p>
+                  <div class='popular__card-cost-wrapper'>
+                    <p class='popular__card-cost'>9 800 ₽</p>
+                    <button class="popular__card-basket">
+                      <img src="./images/bascet.svg" alt="корзина">
+                    </button>
+                  </div>
                 </a>
-                <div class="popular__card-imgBox">
-                  <img src="./images/popularProducts/1.jpg" alt="картинка товара">
-                </div>
-                <p class='popular__card-discription'>Водонепроницаемый
-                  Рюкзак</p>
-                <div class='popular__card-cost-wrapper'>
-                  <p class='popular__card-cost'>9 800 ₽</p>
-                  <a href="#" class="popular__card-basket">
-                    <img src="./images/bascet.svg" alt="корзина">
-                  </a>
-                </div>
-              </a>
-            </li>
-            <li class='mix popular__card popular__card--accessory' data-order="2">
-              <a class='popular__card-link' href="#">
-                <p class='popular__card-saleBanner'>sale</p>
-                <a class="popular__card-like" href="#">
-                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
-                      fill="#2F3035" />
-                  </svg>
+              </li>
+              <li class='mix popular__card popular__card--motors' data-order="2">
+                <a class='popular__card-link' href="#">
+                  <div class='popular__card-saleBanner  popular__card-saleBanner--activ'><p>sale</p></div>
+                  <button class="popular__card-like popular__card-like--active">
+                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                        fill="#2F3035" />
+                    </svg>
+                  </button>
+                  <div class="popular__card-imgBox">
+                    <img src="./images/popularProducts/2.jpg" alt="картинка товара">
+                  </div>
+                  <p class='popular__card-discription'>Спасательный жилет BRP Men's Airflow PFD
+                  </p>
+                  <div class='popular__card-cost-wrapper'>
+                    <p class='popular__card-cost'>6 900 ₽</p>
+                    <button class="popular__card-basket">
+                      <img src="./images/bascet.svg" alt="корзина">
+                    </button>
+                  </div>
                 </a>
-                <div class="popular__card-imgBox">
-                  <img src="./images/popularProducts/2.jpg" alt="картинка товара">
-                </div>
-                <p class='popular__card-discription'>Спасательный жилет BRP Men's Airflow PFD
-                </p>
-                <div class='popular__card-cost-wrapper'>
-                  <p class='popular__card-cost'>6 900 ₽</p>
-                  <a href="#" class="popular__card-basket">
-                    <img src="./images/bascet.svg" alt="корзина">
-                  </a>
-                </div>
-              </a>
-            </li>
-            <li class='mix popular__card popular__card--spareParts' data-order="3">
-              <a class='popular__card-link' href="#">
-                <p class='popular__card-saleBanner'>sale</p>
-                <a class="popular__card-like" href="#">
-                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
-                      fill="#2F3035" />
-                  </svg>
+              </li>
+              <li class='mix popular__card popular__card--tyres' data-order="3">
+                <a class='popular__card-link' href="#">
+                  <div class='popular__card-saleBanner'><p>sale</p></div>
+                  <button class="popular__card-like" >
+                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                        fill="#2F3035" />
+                    </svg>
+                  </button>
+                  <div class="popular__card-imgBox">
+                    <img src="./images/popularProducts/3.jpg" alt="картинка товара">
+                  </div>
+                  <p class='popular__card-discription'>BRP Audio-Premium System</p>
+                  <div class='popular__card-cost-wrapper'>
+                    <p class='popular__card-cost'>68 000 ₽</p>
+                    <button class="popular__card-basket">
+                      <img src="./images/bascet.svg" alt="корзина">
+                    </button>
+                  </div>
                 </a>
-                <div class="popular__card-imgBox">
-                  <img src="./images/popularProducts/3.jpg" alt="картинка товара">
-                </div>
-                <p class='popular__card-discription'>BRP Audio-Premium System</p>
-                <div class='popular__card-cost-wrapper'>
-                  <p class='popular__card-cost'>68 000 ₽</p>
-                  <a href="#" class="popular__card-basket">
-                    <img src="./images/bascet.svg" alt="корзина">
-                  </a>
-                </div>
-              </a>
-            </li>
-            <li class='mix popular__card popular__card--motors' data-order="4">
-              <a class='popular__card-link' href="#">
-                <p class='popular__card-saleBanner'>sale</p>
-                <a class="popular__card-like" href="#">
-                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
-                      fill="#2F3035" />
-                  </svg>
+              </li>
+              <li class='mix popular__card popular__card--electronics' data-order="4">
+                <a class='popular__card-link' href="#">
+                  <div class='popular__card-saleBanner  popular__card-saleBanner--activ'><p>sale</p></div>
+                  <button class="popular__card-like" >
+                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                        fill="#2F3035" />
+                    </svg>
+                  </button>
+                  <div class="popular__card-imgBox">
+                    <img src="./images/popularProducts/4.jpg" alt="картинка товара">
+                  </div>
+                  <p class='popular__card-discription'>Водонепроницаемый
+                    Рюкзак</p>
+                  <div class='popular__card-cost-wrapper'>
+                    <p class='popular__card-cost'>9 800 ₽</p>
+                    <button class="popular__card-basket">
+                      <img src="./images/bascet.svg" alt="корзина">
+                    </button>
+                  </div>
                 </a>
-                <div class="popular__card-imgBox">
-                  <img src="./images/popularProducts/4.jpg" alt="картинка товара">
-                </div>
-                <p class='popular__card-discription'>Водонепроницаемый
-                  Рюкзак</p>
-                <div class='popular__card-cost-wrapper'>
-                  <p class='popular__card-cost'>9 800 ₽</p>
-                  <a href="#" class="popular__card-basket">
-                    <img src="./images/bascet.svg" alt="корзина">
-                  </a>
-                </div>
-              </a>
-            </li>
-          </ul>
+              </li>
+              <li class='mix popular__card popular__card--spareParts' data-order="5">
+                <a class='popular__card-link' href="#">
+                  <div class='popular__card-saleBanner'><p>sale</p></div>
+                  <button class="popular__card-like">
+                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                        fill="#2F3035" />
+                    </svg>
+                  </button>
+                  <div class="popular__card-imgBox">
+                    <img src="./images/technikaCard/1.jpg" alt="картинка товара">
+                  </div>
+                  <p class='popular__card-discription'>Водонепроницаемый
+                    Рюкзак</p>
+                  <div class='popular__card-cost-wrapper'>
+                    <p class='popular__card-cost'>9 800 ₽</p>
+                    <button class="popular__card-basket">
+                      <img src="./images/bascet.svg" alt="корзина">
+                    </button>
+                  </div>
+                </a>
+              </li>
+              <li class='mix popular__card popular__card--motors' data-order="6">
+                <a class='popular__card-link' href="#">
+                  <div class='popular__card-saleBanner'><p>sale</p></div>
+                  <button class="popular__card-like">
+                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                        fill="#2F3035" />
+                    </svg>
+                  </button>
+                  <div class="popular__card-imgBox">
+                    <img src="./images/technikaCard/2.jpg" alt="картинка товара">
+                  </div>
+                  <p class='popular__card-discription'>Водонепроницаемый
+                    Рюкзак</p>
+                  <div class='popular__card-cost-wrapper'>
+                    <p class='popular__card-cost'>9 800 ₽</p>
+                    <button class="popular__card-basket">
+                      <img src="./images/bascet.svg" alt="корзина">
+                    </button>
+                  </div>
+                </a>
+              </li>
+              <li class='mix popular__card popular__card--motors' data-order="7">
+                <a class='popular__card-link' href="#">
+                  <div class='popular__card-saleBanner'><p>sale</p></div>
+                  <button class="popular__card-like" href="#">
+                    <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z"
+                        fill="#2F3035" />
+                    </svg>
+                  </button>
+                  <div class="popular__card-imgBox">
+                    <img src="./images/technikaCard/3.jpg" alt="картинка товара">
+                  </div>
+                  <p class='popular__card-discription'>Водонепроницаемый
+                    Рюкзак</p>
+                  <div class='popular__card-cost-wrapper'>
+                    <p class='popular__card-cost'>9 800 ₽</p>
+                    <button class="popular__card-basket">
+                      <img src="./images/bascet.svg" alt="корзина">
+                    </button>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <a class="popular__cardList-arrow popular__cardList-prev" href="#">
+              <svg width="16" height="29" viewBox="0 0 16 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.9673 14.1924L14.9422 1.37269C15.2613 1.05741 15.2613 0.551755 14.9422 0.236466C14.6231 -0.0788221 14.1113 -0.0788221 13.7922 0.236466L0.239328 13.6273C-0.0797759 13.9426 -0.0797759 14.4482 0.239328 14.7635L13.7922 28.1484C13.9487 28.3031 14.1595 28.3864 14.3642 28.3864C14.5689 28.3864 14.7796 28.309 14.9362 28.1484C15.2553 27.8331 15.2553 27.3275 14.9362 27.0122L1.9673 14.1924Z"
+                  fill="black" />
+              </svg>
+            </a>
+            <a class="popular__cardList-arrow popular__cardList-next" href="#">
+              <svg width="17" height="29" viewBox="0 0 17 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.8936 13.632L2.33608 0.236548C2.01686 -0.0788495 1.50491 -0.0788495 1.1857 0.236548C0.866485 0.551946 0.866485 1.05777 1.1857 1.37317L14.1651 14.1974L1.1857 27.0216C0.866485 27.337 0.866485 27.8428 1.1857 28.1582C1.3423 28.3129 1.5531 28.3962 1.75788 28.3962C1.96266 28.3962 2.17346 28.3189 2.33005 28.1582L15.8876 14.7627C16.2068 14.4533 16.2068 13.9415 15.8936 13.632Z"
+                  fill="black" />
+              </svg>
+            </a>
+          </div>
+          <button class='popular__addButton'>Показать еще</button>
         </div>
       </section>
+
+
     </main>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>

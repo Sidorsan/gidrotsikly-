@@ -6,7 +6,7 @@ $(function () {
     dots: true,
     adaptiveHeight: true,
     slidesToShow: 1,
-   
+
   })
   $('.sliderBanner__next').on('click', function (e) {
     e.preventDefault()
@@ -19,30 +19,88 @@ $(function () {
 
 })
 
-$(function () {
-    $('input[placeholder], textarea[placeholder]').blur();
-    $('.serMemdd').change(function () {
-        var k = $(this).val();
-      if (k == '1') {
-          console.log('1');
-            $("#serMemtb").attr("placeholder", "Type a name (Lastname, Firstname)").blur();
-        }
-        else if (k == '2') {
-            $("#serMemtb").attr("placeholder", "Type an ID").blur();
-        }
-        else if (k == '3') {
-            $("#serMemtb").attr("placeholder", "Type a Location").blur();
-        }
-    });
-});
 $(".search__form-top").on("click", function () {
-     $(".search__input").attr("placeholder", (("введите " + $( "input:checked" ).val()))).blur();
+  $(".search__input").attr("placeholder", (("введите " + $("input:checked").val()))).blur();
 });
-  
+
 $(function () {
+
   var mixer = mixitup('.popular__cardList');
   $('.popular__filter-btn').on('click', function () {
     $('.popular__filter-btn').removeClass('popular__filter-btn--active')
     $(this).addClass('popular__filter-btn--active')
   })
 })
+
+
+$(function () {
+  $('.popular__cardList').slick({
+    arrows: false,
+    slidesToShow: 4,
+    infiniti: true,
+    draggable: false,
+    waitForAnimate: false,
+      });
+  $('.popular__cardList-next').on('click', function (e) {
+    e.preventDefault()
+    $('.popular__cardList').slick('slickNext');
+  })
+  $('.popular__cardList-prev').on('click', function (e) {
+    e.preventDefault()
+    $('.popular__cardList').slick('slickPrev');
+  })
+
+
+// var filtered = false;
+// $('.popular__filter-box li button').on('click',function(){
+//     $('.popular__filter-box li button').removeClass('active');
+//   var filter = $(this).data('filter');
+//   console.log(filter);
+//     if(filter=='all'){
+//         $('.popular__cardList').slick('slickUnfilter');
+//     }else if(filter == '.popular__card--spareParts') {
+//         $('.popular__cardList').slick('slickUnfilter').slick('slickFilter', filter);
+//     } else if (filter == '.popular__card--motors') {
+//        $('.popular__cardList').slick('slickUnfilter').slick('slickFilter', filter);
+//     }
+//     $(this).addClass('active');
+//     filtered = true;
+// }); 
+
+
+
+  // $(".popular__filter-box li button").on('click', function () {
+  //   var filter = $(this).data('filter');
+  //   console.log(filter);
+  //   $(".popular__cardList").slick('slickUnfilter');
+
+  //   if (filter == '.popular__card--spareParts') {
+  //     console.log(1);
+  //     $(".popular__cardList").slick('slickUnfilter').slick('slickFilter', '.popular__card--spareParts');
+  //   }
+  //   else if (filter == '.popular__card--motors') {
+  //           console.log(2);
+  //     $(".popular__cardList").slick('slickUnfilter').slick('slickFilter', '.popular__card--motors');
+  //   }
+  //   else if (filter == '.popular__card--tyres') {
+  //     console.log(3);
+  //     $(".popular__cardList").slick('slickUnfilter').slick('slickFilter', '.popular__card--tyres');
+  //   }
+  //   else if (filter == '.popular__card--electronics') {
+  //     console.log(4);
+  //     $(".popular__cardList").slick('slickUnfilter').slick('slickFilter', '.popular__card--electronics');
+  //   }
+  //   else if (filter == '.popular__card--tools') {
+  //     console.log(5);
+  //     $(".popular__cardList").slick('slickUnfilter').slick('slickFilter', '.popular__card--tools');
+  //   }
+  //   else if (filter == '.popular__card--accessory') {
+  //     console.log(6);
+  //     $(".popular__cardList").slick('slickUnfilter').slick('slickFilter', '.popular__card--accessory');
+  //   }
+
+  // })
+
+})
+
+
