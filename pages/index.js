@@ -24,13 +24,38 @@ $(".search__form-top").on("click", function () {
 });
 
 $(function () {
+  var mixerOne = mixitup('.popular__mixItUp', {
+  
+    controls: {
+        scope: 'local'
+    }
+});
 
-  var mixer = mixitup('.popular__cardList');
+var mixerTwo = mixitup('.additionalItem__mixItUp', {
+    controls: {
+        scope: 'local'
+    }
+});
+
+
+  // var mixer = mixitup('.popular__cardList');
+  
+  // console.log(mixer);
+
   $('.popular__filter-btn').on('click', function () {
-    $('.popular__filter-btn').removeClass('popular__filter-btn--active')
-    $(this).addClass('popular__filter-btn--active')
+    $('.popular__filter-btn').removeClass('filter-btn--active')
+    $(this).addClass('filter-btn--active')
   })
 })
+
+$(function () {
+  // var mixer = mixitup('.additionalItem__cardList');
+  $('.additionalItem__filter-btn').on('click', function () {
+    $('.additionalItem__filter-btn').removeClass('filter-btn--active')
+    $(this).addClass('filter-btn--active')
+  })
+})
+
 
 
 $(function () {
@@ -49,7 +74,25 @@ $(function () {
     e.preventDefault()
     $('.popular__cardList').slick('slickPrev');
   })
+  })
 
+$(function () {
+  $('.additionalItem__cardList').slick({
+    arrows: false,
+    slidesToShow: 4,
+    infiniti: true,
+    draggable: false,
+    waitForAnimate: false,
+      });
+  $('.additionalItem__cardList-next').on('click', function (e) {
+    e.preventDefault()
+    $('.additionalItem__cardList').slick('slickNext');
+  })
+  $('.additionalItem__cardList-prev').on('click', function (e) {
+    e.preventDefault()
+    $('.additionalItem__cardList').slick('slickPrev');
+  })
+})
 
 // var filtered = false;
 // $('.popular__filter-box li button').on('click',function(){
@@ -101,6 +144,6 @@ $(function () {
 
   // })
 
-})
+
 
 
