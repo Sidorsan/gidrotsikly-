@@ -564,13 +564,9 @@ body {
   border-bottom: 3px solid #1C62CD;
 }
 
-.cardList-wrapper {
-  position: relative;
-  margin: 25px -15px 0px;
-}
-
 .cardList {
   display: flex;
+  position: relative;
   margin: 35px -15px 0px;
 }
 
