@@ -25,36 +25,28 @@ $(".search__form-top").on("click", function () {
 
 $(function () {
   var mixerOne = mixitup('.popular__mixItUp', {
-  
     controls: {
-        scope: 'local'
+      scope: 'local'
     }
-});
+  });
 
-var mixerTwo = mixitup('.additionalItem__mixItUp', {
+  var mixerTwo = mixitup('.additionalItem__mixItUp', {
     controls: {
-        scope: 'local'
+      scope: 'local'
     }
-});
-
-
-  // var mixer = mixitup('.popular__cardList');
-  
-  // console.log(mixer);
+  });
 
   $('.popular__filter-btn').on('click', function () {
     $('.popular__filter-btn').removeClass('filter-btn--active')
     $(this).addClass('filter-btn--active')
-  })
-})
 
-$(function () {
-  // var mixer = mixitup('.additionalItem__cardList');
+  })
   $('.additionalItem__filter-btn').on('click', function () {
     $('.additionalItem__filter-btn').removeClass('filter-btn--active')
     $(this).addClass('filter-btn--active')
   })
 })
+
 
 
 
@@ -65,7 +57,7 @@ $(function () {
     infiniti: true,
     draggable: false,
     waitForAnimate: false,
-      });
+  });
   $('.popular__cardList-next').on('click', function (e) {
     e.preventDefault()
     $('.popular__cardList').slick('slickNext');
@@ -74,7 +66,7 @@ $(function () {
     e.preventDefault()
     $('.popular__cardList').slick('slickPrev');
   })
-  })
+})
 
 $(function () {
   $('.additionalItem__cardList').slick({
@@ -83,7 +75,7 @@ $(function () {
     infiniti: true,
     draggable: false,
     waitForAnimate: false,
-      });
+  });
   $('.additionalItem__cardList-next').on('click', function (e) {
     e.preventDefault()
     $('.additionalItem__cardList').slick('slickNext');
@@ -108,7 +100,7 @@ $(function () {
 //     }
 //     $(this).addClass('active');
 //     filtered = true;
-// }); 
+// });
 
 
 
