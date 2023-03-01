@@ -4,7 +4,8 @@ $(function () {
     arrows: false,
     appendDots: $('.sliderBanner__dots'),
     dots: true,
-    adaptiveHeight: true,
+    // variableWidth: true,
+    //  centerMode: true,
     slidesToShow: 1,
 
   })
