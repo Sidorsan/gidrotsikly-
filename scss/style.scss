@@ -737,13 +737,13 @@ body {
 }
 
 .cardList-wrapper {
-  
+  position: relative;
 }
 
 
 .cardList {
   display: flex;
-  position: relative;
+
   margin: 35px -15px 0px;
 }
 
@@ -802,7 +802,7 @@ body {
   background-color: #1C62CD;
   visibility: hidden;
 
-  &--activ {
+  &--active {
     visibility: visible;
   }
 
@@ -917,7 +917,7 @@ body {
   display: none;
 }
 
-.card-productAbsent--visible {
+.card-productAbsent--active {
   display: flex;
 }
 
@@ -1028,4 +1028,117 @@ body {
 
 .additionalItem {
   margin-top: 72px;
+}
+
+/*---------------footer-----------------------------*/
+/*---------------footer-----------------------------*/
+.footer {
+  margin-top: 97px;
+  background-color: #F0F0F4;
+}
+
+.footer__top {
+
+  padding: 42px 0px;
+}
+
+.footer__top-inner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -15px;
+}
+
+.footer__top-col {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+.footer__top-col:first-child {
+  flex-grow: 0.2;
+}
+
+.footer__top-title {
+  max-width: 222px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.footer__form-items {
+  margin-top: 34px;
+
+}
+
+.footer__form {
+  display: flex;
+}
+
+.footer__form-input {
+  padding: 8px 0 8px 12px;
+  width: 100%;
+}
+
+.footer__form-button {
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 10px 16px;
+  background-color: #1C62CD;
+  color: #FFFFFF;
+}
+
+.footer__top-list {}
+
+.footer__top-item {
+  margin-top: 5px;
+  transition: $trAll;
+}
+
+.footer__top-item:hover {
+  text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
+}
+
+.footer__item-link {
+  white-space: nowrap;
+}
+
+
+.footer__socials {
+  display: flex;
+  align-self: center;
+}
+
+.footer__socials-item {
+  margin-right: 30px;
+  transition: $trAll;
+}
+
+.footer__socials-item:hover {
+  scale: (1.1);
+}
+
+
+.footer__socials-item:last-child {
+  margin-right: 0;
+}
+
+.footer__social-link {}
+
+.footer__botton {
+  padding: 46px 0px 27px;
+}
+.footer__botton-inner{
+display: flex;
+justify-content: center;
+}
+.footer__botton-link {
+  margin-right: 80px;
+  transition: $trAll;
+}
+.footer__botton-link:hover {
+  text-shadow: 0 0 0.65px #333, 0 0 0.65px #333;
+}
+.footer__botton-link:last-child {
+  margin-right: 0;
 }
