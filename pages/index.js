@@ -58,6 +58,29 @@ $(function () {
     infiniti: true,
     draggable: false,
     waitForAnimate: false,
+     responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 1,
+          draggable: true,
+          dots: true,
+        }
+      },
+
+    ]
   });
   $('.popular__cardList-next').on('click', function (e) {
     e.preventDefault()
@@ -76,6 +99,29 @@ $(function () {
     infiniti: true,
     draggable: false,
     waitForAnimate: false,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 1,
+          draggable: true,
+          dots: true,
+        }
+      },
+
+    ]
   });
   $('.additionalItem__cardList-next').on('click', function (e) {
     e.preventDefault()
@@ -92,7 +138,31 @@ $(function () {
     $('.card-like').on('click', function (e) {
     e.preventDefault()
     $(this).toggleClass('card-like--active');
+    })
+  
+   $('.burger, .overlay, .burger-nav a').on('click', function (e) {
+    e.preventDefault();
+    $('.burger-nav').toggleClass('burger-nav--open')
+    $('.overlay').toggleClass('overlay--show')
+    $('.burger').toggleClass('burger--open')
   })
+  //  $('.burger, .overlay, .header__top a').on('click', function (e) {
+  //   e.preventDefault();
+  //   $('.header__top').toggleClass('header__top--open')
+  //   $('.overlay').toggleClass('overlay--show')
+  //   $('.burger').toggleClass('burger--open')
+  // })
+
+ 
+
+ $(window).on('scroll', function () {
+  
+   if ($(window).scrollTop() > 0 && $('.burger-nav').hasClass('burger-nav--open') === false) {
+     $('.burger').addClass('burger--follow')
+   } else {
+     $('.burger').removeClass('burger--follow')
+   }
+ })
 })
 
 
