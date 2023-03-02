@@ -60,19 +60,19 @@ $(function () {
     waitForAnimate: false,
      responsive: [
       {
-        breakpoint: 1000,
+        breakpoint: 1100,
         settings: {
           slidesToShow: 3,
         }
       },
       {
-        breakpoint: 750,
+        breakpoint: 950,
         settings: {
           slidesToShow: 2,
         }
       },
       {
-        breakpoint: 550,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           draggable: true,
@@ -101,19 +101,19 @@ $(function () {
     waitForAnimate: false,
     responsive: [
       {
-        breakpoint: 1000,
+        breakpoint: 1100,
         settings: {
           slidesToShow: 3,
         }
       },
       {
-        breakpoint: 750,
+        breakpoint: 950,
         settings: {
           slidesToShow: 2,
         }
       },
       {
-        breakpoint: 550,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           draggable: true,

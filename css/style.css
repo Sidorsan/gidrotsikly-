@@ -198,8 +198,7 @@ body {
   height: 60%;
 }
 .sliderBanner .slick-slider,
-.sliderBanner .slick-list,
-.sliderBanner .slick-track {
+.sliderBanner .slick-list {
   height: 100%;
 }
 .sliderBanner__slide img {
@@ -593,6 +592,10 @@ body {
   position: relative;
 }
 
+.slick-track {
+  display: flex;
+}
+
 .cardList {
   display: flex;
   margin: 35px -15px 0px;
@@ -603,10 +606,16 @@ body {
   border-radius: 3px;
   margin: 0 15px;
   position: relative;
+  height: auto;
+  flex: 0 0 auto;
 }
 
 .card-link {
   position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .card-link:hover {
@@ -678,7 +687,6 @@ body {
 .card-imgBox {
   margin: 26px auto 0;
   width: 80%;
-  min-height: 200px;
 }
 
 .card-imgBox img {
@@ -998,6 +1006,8 @@ body {
     width: 80%;
     z-index: 1;
   }
+
+  /*-----------------------------*/
 }
 /*===========================1120============================*/
 @media (max-width: 1120px) {
@@ -1153,9 +1163,18 @@ body {
   .cardPromtion__newPrice {
     font-size: 20px;
   }
+
+  .cardNav__list {
+    grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+  }
 }
 /*===========================1000============================*/
 @media (max-width: 1000px) {
+  .container__title {
+    text-align: center;
+  }
+
+  /*---------------------------------------*/
   .sliderBanner__inner {
     flex-direction: column;
   }
@@ -1174,7 +1193,48 @@ body {
     grid-template: repeat(3, 1fr)/repeat(2, 1fr);
   }
 
-  /*===========================900============================*/
+  /*---------------------------------------*/
+  .card-imgBox {
+    min-height: 160px;
+  }
+}
+/*===========================900============================*/
+@media (max-width: 900px) {
+  .footer__socials {
+    flex-direction: column;
+    align-self: flex-start;
+  }
+
+  .footer__form {
+    flex-wrap: wrap;
+  }
+}
+/*===========================800============================*/
+@media (max-width: 800px) {
+  .checkbox-btn span {
+    padding: 5px 8px;
+    font-size: 16px;
+  }
+
+  /*---------------------------------------*/
+  .filter-item {
+    margin-right: 10px;
+  }
+}
+/*===========================600============================*/
+@media (max-width: 600px) {
+  .cardNav__list {
+    grid-template: repeat(6, 1fr)/repeat(1, 1fr);
+  }
+
+  /*---------------------------------------*/
+  .footer__form-input {
+    padding: 8px 0 8px 2px;
+  }
+
+  .cardList-arrow {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

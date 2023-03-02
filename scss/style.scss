@@ -264,10 +264,11 @@ body {
   }
 
   .slick-slider,
-  .slick-list,
-  .slick-track {
+  .slick-list {
     height: 100%;
   }
+
+
 
   &__slider {}
 
@@ -282,17 +283,6 @@ body {
 
     }
   }
-
-  // .sliderBanner__slide
-
-
-
-
-
-
-
-
-
 
   // .sliderBanner__arrow
 
@@ -570,7 +560,6 @@ body {
   padding: 11px 26px;
   font-weight: 400;
   font-size: 20px;
-
 }
 
 .checkbox-btn input[type=radio]:checked+span {
@@ -782,6 +771,10 @@ body {
   position: relative;
 }
 
+.slick-track {
+  display: flex;
+
+}
 
 .cardList {
   display: flex;
@@ -794,11 +787,16 @@ body {
   border-radius: 3px;
   margin: 0 15px;
   position: relative;
-
+  height: auto;
+  flex: 0 0 auto;
 }
 
 .card-link {
   position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .card-link:hover {
@@ -879,7 +877,7 @@ body {
   // padding: 0 35px;
   margin: 26px auto 0;
   width: 80%;
-  min-height: 200px;
+  // min-height: 200px;
 }
 
 .card-imgBox img {
@@ -982,7 +980,7 @@ body {
   scale: (1.1);
 }
 
-.cardList-arrow {}
+
 
 .cardList-prev {
   position: absolute;
@@ -1218,7 +1216,7 @@ body {
     left: 10px;
     bottom: 10px;
     margin-left: 0;
-    
+
   }
 
   .bannerDiscount__imgBoxTwo {
@@ -1232,10 +1230,17 @@ body {
     margin: 10px auto;
     z-index: 1;
   }
-.bannerDiscount__discription {
-  width: 80%;
-  z-index: 1;
-}
+
+  .bannerDiscount__discription {
+    width: 80%;
+    z-index: 1;
+  }
+
+  /*-----------------------------*/
+
+
+
+
 }
 
 
@@ -1408,12 +1413,21 @@ body {
     font-size: 20px;
   }
 
+  .cardNav__list {
+    grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+  }
+
+
 }
 
 /*===========================1000============================*/
 @media (max-width: 1000px) {
 
+  .container__title {
+    text-align: center;
+  }
 
+  /*---------------------------------------*/
   .sliderBanner__inner {
     flex-direction: column;
 
@@ -1427,19 +1441,66 @@ body {
     max-width: fit-content;
     margin: 20px auto 0px;
   }
-/*---------------------------------------*/
 
-     .cardNav__list {
-  
-       grid-template: repeat(3, 1fr)/repeat(2, 1fr);
-  
-     }
+  /*---------------------------------------*/
 
-  /*===========================900============================*/
-  @media (max-width: 900px) {
-  
+  .cardNav__list {
+
+    grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+
+  }
+
+  /*---------------------------------------*/
+  .card-imgBox {
+
+    min-height: 160px;
+  }
+}
+
+/*===========================900============================*/
+@media (max-width: 900px) {
+  .footer__socials {
+    flex-direction: column;
+    align-self: flex-start;
+  }
+
+  .footer__form {
+    flex-wrap: wrap;
   }
 
 
+}
+
+/*===========================800============================*/
+@media (max-width: 800px) {
+  .checkbox-btn span {
+    padding: 5px 8px;
+    font-size: 16px;
+  }
+
+
+  /*---------------------------------------*/
+  .filter-item {
+    margin-right: 10px;
+  }
+
+
+}
+
+/*===========================600============================*/
+@media (max-width: 600px) {
+  .cardNav__list {
+    grid-template: repeat(6, 1fr)/repeat(1, 1fr);
+  }
+
+
+  /*---------------------------------------*/
+.footer__form-input {
+  padding: 8px 0 8px 2px;
+  
+}
+.cardList-arrow {
+  display: none;
+}
 
 }
