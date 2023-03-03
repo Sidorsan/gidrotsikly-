@@ -344,7 +344,7 @@
           <div class='popular__inner'>
             <h2 class='popular__title container__title'>Популярные товары</h2>
             <div class='popular__mixItUp'>
-              <ul class="filter-box">
+              <ul id="be-select" tabindex="0" class=" filter-box">
                 <li class='filter-item'>
                   <button class='popular__filter-btn filter-btn filter-btn--active'
                     data-filter=".popular__card--spareParts">запчасти</button>
@@ -625,6 +625,7 @@
                     </div>
                   </li>
                 </ul>
+                <div class="popular__dots slickDots"></div>
                 <a class="cardList-arrow cardList-prev popular__cardList-prev" href="#">
                   <svg width="16" height="29" viewBox="0 0 16 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -652,8 +653,8 @@
             <div class="bannerDiscount__imgBoxOne"><img src="./images/bannerDiscount/1.svg" alt="квадроцикл"></div>
             <div class="bannerDiscount__imgBoxTwo"><img src="./images/bannerDiscount/2.svg" alt="багги"></div>
             <!-- </div> -->
-            <p class='bannerDiscount__discription'>CКИДКИ 
-              на все запчасти 
+            <p class='bannerDiscount__discription'>CКИДКИ
+              на все запчасти
               до 70%</p>
             <button class='bannerDiscount__button'>ПОСМОТЕТЬ ВСЕ</button>
           </div>
@@ -664,7 +665,7 @@
           <div class="additionalItem__inner">
             <h2 class='additionalItem__title container__title'>С этим товаром покупают</h2>
             <div class='additionalItem__mixItUp'>
-              <ul class="filter-box">
+              <ul class="filter-box ">
                 <li class='filter-item'>
                   <button class='additionalItem__filter-btn filter-btn filter-btn--active'
                     data-filter=".additionalItem__card--spareParts">запчасти</button>
@@ -944,6 +945,7 @@
                     </div>
                   </li>
                 </ul>
+                <div class="additionalItem__dots slickDots"></div>
                 <a class="cardList-arrow cardList-prev additionalItem__cardList-prev" href="#">
                   <svg width="16" height="29" viewBox="0 0 16 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path

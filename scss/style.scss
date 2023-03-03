@@ -1,33 +1,19 @@
 @import "variables";
 @import "mixins";
 
-// .test {
-//   @include font(#333, 400);
-//   @include padd(20px 30px) //падингов можно хоть сколько
-// ;
-// }
-// .test1 {
-//   @include font();
-//   @include padd(20px) //падингов можно хоть сколько
-// ;
-// }
 
-/*--------------------------------------------*/
 
-// a {
-//   @include link(black, red, blue, green);
-// }
-// .header1 {
-//   @include link(black, red, blue, green) {
-//     background-color: #fff;
-//     &:visited {
-//       color: #260954;
-//     }
-//   }
-// }
-/*--------------------------------------------*/
-/*--------------------------------------------*/
-/*--------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
 html,
 body {
   font-family: "SF Pro Display", sans-serif;
@@ -72,6 +58,64 @@ body {
     margin-top: 78px;
   }
 }
+
+.slickDots .slick-dots {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.slickDots .slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+
+.slickDots .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.slickDots .slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: black;
+}
+
+.slickDots .slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 40px;
+  line-height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: black;
+}
+
+// #ul-arrow {
+//   display: none;
+// }
+
+// #selected--zg-ul-select {
+//   display: none;
+// }
 
 /*---------------HEADER-----------------------------*/
 /*---------------HEADER-----------------------------*/
@@ -723,6 +767,7 @@ body {
 .popular__inner {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 
@@ -734,6 +779,10 @@ body {
 
 .filter-item {
   margin-right: 50px;
+}
+.filter-item svg{
+  width: 0;
+  height: 0;
 }
 
 .filter-item:last-child {
@@ -1489,18 +1538,154 @@ body {
 
 /*===========================600============================*/
 @media (max-width: 600px) {
+  .search__form-top {
+    // display: flex;
+    // flex-direction: column;
+    white-space: normal;
+  }
+
+  /*---------------------------------------*/
+
+    ul.zg-ul-select {
+      $blue: #0074d9;
+      border-radius: 2px;
+      box-sizing: border-box;
+      cursor: pointer;
+      font-family: 'Helvetica Neue', Helvetica, sans-serif;
+      font-size: 2em;
+      margin: 0;
+      padding: 0;
+      
+  
+      li {
+        border-radius: 3px;
+        display: none;
+        padding: 0.5em;
+  
+        &.active {
+          align-items: center;
+          border: 1px solid #111;
+          border-radius: 3px;
+          box-shadow: 0 0 2px #aaa;
+          color: #111;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+  
+      &.active {
+        border: 1px solid #aaa;
+  
+        li {
+          border: none;
+          box-shadow: none;
+          display: block;
+  
+          &:hover {
+            background: $blue;
+          }
+  
+          &.active {
+            background: lighten($blue, 20%);
+  
+            &:hover {
+              background: $blue;
+            }
+          }
+        }
+      }
+    }
+  
+    #selected--zg-ul-select {
+      align-items: center;
+      box-sizing: border-box;
+      color: #111;
+      display: flex;
+      font-family: 'Helvetica Neue', Helvetica, sans-serif;
+      justify-content: space-between;
+      font-size: 2em;
+      width: auto;
+      
+    
+  
+      &.active {
+        border: 1px solid #111;
+        border-radius: 3px;
+        box-shadow: 0 0 2px #aaa;
+        padding: 0.5em;
+      }
+    }
+
+        .filter-item svg {
+          width: 32px;
+          height: 32px;
+        }
+
+  .filter-box {
+    flex-direction: column;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    // top: 104px;
+  }
+  .cardList-wrapper {
+    margin-top: 80px;
+    
+  }
+
+
+
+
+
+
+
+
+
+
+  /*---------------------------------------*/
+
+
   .cardNav__list {
     grid-template: repeat(6, 1fr)/repeat(1, 1fr);
   }
 
+  /*---------------------------------------*/
+
+  .cardList-arrow {
+    display: none;
+  }
 
   /*---------------------------------------*/
-.footer__form-input {
-  padding: 8px 0 8px 2px;
-  
-}
-.cardList-arrow {
-  display: none;
-}
+  .footer__top-inner {
+    margin: 0;
+  }
 
+
+  .footer__top-col {
+    display: none;
+  }
+
+  .footer__socials {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__botton {
+    padding-top: 30px;
+  }
+
+  .footer__botton-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__botton-link {
+    margin-bottom: 10px;
+  }
+
+  .footer__botton-link:last-child {
+    margin-bottom: 0;
+  }
 }
