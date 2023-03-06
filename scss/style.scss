@@ -779,11 +779,24 @@ body {
 
 .filter-item {
   margin-right: 50px;
+
 }
-.filter-item svg{
-  width: 0;
-  height: 0;
-}
+
+// .filter-item svg{
+//   width: 0;
+//   height: 0;
+// }
+
+
+
+
+
+
+
+
+
+
+
 
 .filter-item:last-child {
   margin-right: 0;
@@ -795,6 +808,7 @@ body {
   font-size: 15px;
   position: relative;
   line-height: 1.8;
+  width: 100%;
 }
 
 .filter-btn:hover {
@@ -811,6 +825,12 @@ body {
   background-color: transparent;
   transition: $trAll;
 }
+
+
+
+
+
+
 
 .filter-btn--active {
   border-bottom: 3px solid #1C62CD;
@@ -1123,6 +1143,13 @@ body {
   margin-top: 72px;
 }
 
+.additionalItem__inner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+
 /*---------------footer-----------------------------*/
 /*---------------footer-----------------------------*/
 .footer {
@@ -1278,6 +1305,7 @@ body {
   .bannerDiscount__button {
     margin: 10px auto;
     z-index: 1;
+    padding: 10px;
   }
 
   .bannerDiscount__discription {
@@ -1466,12 +1494,20 @@ body {
     grid-template: repeat(3, 1fr)/repeat(2, 1fr);
   }
 
+  /*---------------------------------------*/
+  .cardList-arrow {
+    display: none;
+  }
 
 }
 
 /*===========================1000============================*/
 @media (max-width: 1000px) {
-
+.container {
+    
+    padding: 0 15px;
+  
+  }
   .container__title {
     text-align: center;
   }
@@ -1498,6 +1534,8 @@ body {
     grid-template: repeat(3, 1fr)/repeat(2, 1fr);
 
   }
+
+
 
   /*---------------------------------------*/
   .card-imgBox {
@@ -1538,103 +1576,154 @@ body {
 
 /*===========================600============================*/
 @media (max-width: 600px) {
+  .header {
+    margin-top: 20px;
+  }
+  .header__top-inner {
+    justify-content: flex-end;
+  }
+  .search__form-top {
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+  }
+
+  .search__form-buttom {
+    margin-top: 5px;
+    flex-wrap: wrap;
+  }
+
+  /*---------------------------------------*/
   .search__form-top {
     // display: flex;
     // flex-direction: column;
-    white-space: normal;
+
   }
 
   /*---------------------------------------*/
 
-    ul.zg-ul-select {
-      $blue: #0074d9;
-      border-radius: 2px;
-      box-sizing: border-box;
-      cursor: pointer;
-      font-family: 'Helvetica Neue', Helvetica, sans-serif;
-      font-size: 2em;
-      margin: 0;
-      padding: 0;
-      
-  
-      li {
-        border-radius: 3px;
-        display: none;
-        padding: 0.5em;
-  
-        &.active {
-          align-items: center;
-          border: 1px solid #111;
-          border-radius: 3px;
-          box-shadow: 0 0 2px #aaa;
-          color: #111;
-          display: flex;
-          justify-content: space-between;
-        }
-      }
-  
+  ul.zg-ul-select {
+    $blue: #0074d9;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+
+
+    li {
+      border-radius: 3px;
+      display: none;
+      padding: 5px;
+
       &.active {
-        border: 1px solid #aaa;
-  
-        li {
-          border: none;
-          box-shadow: none;
-          display: block;
-  
-          &:hover {
-            background: $blue;
-          }
-  
-          &.active {
-            background: lighten($blue, 20%);
-  
-            &:hover {
-              background: $blue;
-            }
-          }
-        }
-      }
-    }
-  
-    #selected--zg-ul-select {
-      align-items: center;
-      box-sizing: border-box;
-      color: #111;
-      display: flex;
-      font-family: 'Helvetica Neue', Helvetica, sans-serif;
-      justify-content: space-between;
-      font-size: 2em;
-      width: auto;
-      
-    
-  
-      &.active {
+        align-items: center;
         border: 1px solid #111;
         border-radius: 3px;
         box-shadow: 0 0 2px #aaa;
-        padding: 0.5em;
+        color: #111;
+        display: flex;
+        justify-content: space-between;
       }
     }
 
-        .filter-item svg {
-          width: 32px;
-          height: 32px;
+    &.active {
+      border: 1px solid #aaa;
+
+      li {
+        border: none;
+        box-shadow: none;
+        display: block;
+
+        &:hover {
+          background: $blue;
         }
+
+        &.active {
+          background: lighten($blue, 20%);
+
+          &:hover {
+            background: $blue;
+          }
+        }
+      }
+    }
+  }
+
+  #selected--zg-ul-select {
+    align-items: center;
+    box-sizing: border-box;
+    color: #111;
+    display: flex;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    justify-content: space-between;
+    font-size: 2em;
+    width: auto;
+    margin-top: 10px;
+    // display: none;
+
+
+
+    &.active {
+      border: 1px solid #111;
+      border-radius: 3px;
+      box-shadow: 0 0 2px #aaa;
+      padding: 0.5em;
+    }
+  }
+
+
+  .filter-item svg {
+    width: 20px;
+    height: 20px;
+  }
 
   .filter-box {
     flex-direction: column;
-    margin-top: 10px;
+    top: 33px;
     position: absolute;
     z-index: 1;
     background-color: #fff;
-    // top: 104px;
+
   }
+
   .cardList-wrapper {
-    margin-top: 80px;
-    
+    margin-top: 50px;
+
   }
 
 
+  .filter-item {
+    margin-right: 0;
+  }
+
+  .filter-btn {
+    border-bottom: none;
+    padding-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .filter-btn--active span::before {
+    content: '';
+    position: absolute;
+    right: -30px;
+    top: 75%;
+    transform: translateY(-50%);
+    border: 10px solid transparent;
+    border-top: 10px solid #000;
+    opacity: 0.6;
+    transition: all .3s;
+  }
+
+
+  .filter-btn span:hover:before {
+    cursor: pointer;
+    opacity: 1;
+  }
 
 
 
@@ -1652,9 +1741,7 @@ body {
 
   /*---------------------------------------*/
 
-  .cardList-arrow {
-    display: none;
-  }
+
 
   /*---------------------------------------*/
   .footer__top-inner {
@@ -1687,5 +1774,18 @@ body {
 
   .footer__botton-link:last-child {
     margin-bottom: 0;
+  }
+}
+
+/*===========================400============================*/
+@media (max-width: 400px) {
+
+  .container__title {
+    max-width: 220px;
+    align-self: center;
+  }
+
+  .filter-box {
+    top: 64px;
   }
 }

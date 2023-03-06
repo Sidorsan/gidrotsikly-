@@ -134,8 +134,8 @@
               <!-- <img src="./images/logo.svg" alt="logo"> -->
             </a>
             <a class='header__nav-link header__nav-link--location' href="#">Москва, ул. Науки 25</a>
-            <ul class='header__nav header__nav-user header__nav-link-user--heart'>
-              <li class='header__nav-link-user'>
+            <ul class='header__nav header__nav-user '>
+              <li class='header__nav-link-user header__nav-link-user--heart'>
                 <a href="#">
                   <img src="./images/heart.svg" alt="сердце">
                 </a>
@@ -344,30 +344,32 @@
           <div class='popular__inner'>
             <h2 class='popular__title container__title'>Популярные товары</h2>
             <div class='popular__mixItUp'>
-              <ul id="be-select" tabindex="0" class=" filter-box">
+              <ul class="popular__filter-box filter-box">
                 <li class='filter-item'>
                   <button class='popular__filter-btn filter-btn filter-btn--active'
-                    data-filter=".popular__card--spareParts">запчасти</button>
+                    data-filter=".popular__card--spareParts"><span></span>запчасти</button>
+                    
                 </li>
                 <li class='filter-item'>
                   <button class='popular__filter-btn filter-btn' type='button'
-                    data-filter=".popular__card--motors">моторы</button>
+                    data-filter=".popular__card--motors"><span></span>моторы</button>
+                   
                 </li>
                 <li class='filter-item'>
                   <button class='popular__filter-btn filter-btn' type='button'
-                    data-filter=".popular__card--tyres">шины</button>
+                    data-filter=".popular__card--tyres"><span></span>шины</button>
                 </li>
                 <li class='filter-item'>
                   <button class='popular__filter-btn filter-btn' type='button'
-                    data-filter=".popular__card--electronics">электроника</button>
+                    data-filter=".popular__card--electronics"><span></span>электроника</button>
                 </li>
                 <li class='filter-item'>
                   <button class='popular__filter-btn filter-btn' type='button'
-                    data-filter=".popular__card--tools">инструменты</button>
+                    data-filter=".popular__card--tools"><span></span>инструменты</button>
                 </li>
                 <li class='filter-item'>
                   <button class='popular__filter-btn filter-btn' type='button'
-                    data-filter=".popular__card--accessory">аксессуары</button>
+                    data-filter=".popular__card--accessory"><span></span>аксессуары</button>
                 </li>
               </ul>
               <div class='cardList-wrapper'>
@@ -665,30 +667,30 @@
           <div class="additionalItem__inner">
             <h2 class='additionalItem__title container__title'>С этим товаром покупают</h2>
             <div class='additionalItem__mixItUp'>
-              <ul class="filter-box ">
+              <ul class="additionalItem__filter-box filter-box">
                 <li class='filter-item'>
                   <button class='additionalItem__filter-btn filter-btn filter-btn--active'
-                    data-filter=".additionalItem__card--spareParts">запчасти</button>
+                    data-filter=".additionalItem__card--spareParts"><span></span>запчасти</button>
                 </li>
                 <li class='filter-item'>
                   <button class='additionalItem__filter-btn filter-btn' type='button'
-                    data-filter=".additionalItem__card--motors">моторы</button>
+                    data-filter=".additionalItem__card--motors"><span></span>моторы</button>
                 </li>
                 <li class='filter-item'>
                   <button class='additionalItem__filter-btn filter-btn' type='button'
-                    data-filter=".additionalItem__card--tyres">шины</button>
+                    data-filter=".additionalItem__card--tyres"><span></span>шины</button>
                 </li>
                 <li class='filter-item'>
                   <button class='additionalItem__filter-btn filter-btn' type='button'
-                    data-filter=".additionalItem__card--electronics">электроника</button>
+                    data-filter=".additionalItem__card--electronics"><span></span>электроника</button>
                 </li>
                 <li class='filter-item'>
                   <button class='additionalItem__filter-btn filter-btn' type='button'
-                    data-filter=".additionalItem__card--tools">инструменты</button>
+                    data-filter=".additionalItem__card--tools"><span></span>инструменты</button>
                 </li>
                 <li class='filter-item'>
                   <button class='additionalItem__filter-btn filter-btn' type='button'
-                    data-filter=".additionalItem__card--accessory">аксессуары</button>
+                    data-filter=".additionalItem__card--accessory"><span></span>аксессуары</button>
                 </li>
               </ul>
               <div class='cardList-wrapper'>
@@ -1135,6 +1137,12 @@
   <script src='./pages/index.js'></script>
   <script src="./pages/mixitup.js"></script>
 
+
+
+
+
+
+  
 </body>
 
 </html>
